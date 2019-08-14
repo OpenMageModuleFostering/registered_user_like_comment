@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+ <config>
+<modules>
+    <Lister_Testimonial>
+        <version>1.6.1.1</version>
+    </Lister_Testimonial>
+</modules>
+<global>
+    <helpers>
+        <testimonial>
+            <class>Lister_Testimonial_Helper</class>
+        </testimonial>
+    </helpers>
+    <blocks>
+         <testimonial>
+              <class>Lister_Testimonial_Block</class>
+         </testimonial>
+    </blocks>
+    <models>
+        <testimonial>
+            <class>Lister_Testimonial_Model</class>
+            <resourceModel>testimonial_resource</resourceModel>
+        </testimonial>
+        <testimonial_resource>
+            <class>Lister_Testimonial_Model_Resource</class>
+            <entities>
+                <testimonial>
+                    <table>testimonial</table>
+                </testimonial>
+            </entities>
+        </testimonial_resource>
+    </models>
+    <resources>
+        <testimonial_setup>
+            <setup>
+                <module>Lister_Testimonial</module>
+            </setup>
+        </testimonial_setup>
+    </resources>
+</global>
+<frontend>
+    
+    <routers>
+        <testimonial>
+            <use>standard</use>
+            <args>
+                <module>Lister_Testimonial</module>
+                <frontName>testimonial</frontName>
+            </args>
+        </testimonial>
+    </routers>
+    
+    <layout>
+    <updates>
+        <testimonial>
+            <file>testimonial/testimonial.xml</file>
+        </testimonial>
+    </updates>
+    </layout>
+</frontend>
+<adminhtml>
+    <layout>
+            <updates>
+                <testimonial>
+                    <file>testimonial/testimonial.xml</file>
+                </testimonial>
+            </updates>
+    </layout>
+</adminhtml>
+ </config>

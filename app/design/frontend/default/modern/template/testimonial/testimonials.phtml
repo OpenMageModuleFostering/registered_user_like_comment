@@ -1,0 +1,9 @@
+<?php
+echo "<table border = '10' cellspacing = '10' cellpadding='10'><tr><th>Product ID</th><th>Name</th><th>Email</th><th>Phone</th><th>Remarks</th></tr>";
+foreach($this->getfeedbacks() as $feed)
+{
+    
+        echo "<tr><td>".$feed->getproduct_id()."</td><td>".$feed->getname()."</td><td>".$feed->getemail()."</td><td>".$feed->getdial()."</td><td>".$feed->getremark()."</td></tr>";
+}
+echo "</table>";
+?>

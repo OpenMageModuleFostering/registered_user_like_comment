@@ -1,0 +1,21 @@
+<?php
+$user = $this->getuser();
+
+if ($user == "") {
+
+}
+else {
+    if ($this->getuserlike()>0) {
+?>
+        <a href="<?php echo $this->getUrl('like/index/unlike',array('data'=>$this->getproduser())); ?>">Unlike</a>
+<?php
+    }
+    else {
+?>
+        <a href="<?php echo $this->getUrl('like/index/like',array('data'=>$this->getproduser())); ?>">Like</a>
+<?php
+    }
+    echo " | ";
+}
+echo $this->getprodlikes();
+?>

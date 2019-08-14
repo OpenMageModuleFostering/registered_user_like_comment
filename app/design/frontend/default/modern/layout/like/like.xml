@@ -1,0 +1,12 @@
+<layout version="0.1.0">     
+     <!--Make this like_index_index to use for update handle-->
+    <catalog_product_view>
+         <reference name="content">
+             <!-- Remove this reference also to use update handle-->
+             <reference name = "product.info">
+                <block type="like/indexblock"  name="like_block" as="like_block"
+                          template="like/likes.phtml" />
+             </reference>
+         </reference>
+      </catalog_product_view>
+</layout>

@@ -1,0 +1,23 @@
+<?php
+ if(strpos($this->getuser(), "Nope")!== false)
+         echo "Login in to give feedback";
+ else
+ {
+     $details = explode(",", $this->getuser());
+     $name = $details[0];
+     $email = $details[1];
+     $product = $details[2];
+     echo ' <html>
+            <body>
+            <form action = '.$this->getUrl('testimonial/index/receive').' method = "post">
+            <p>Product: <input type="text" style="border:none" size = "30" name = "product" id = "product" value = "'.$product.'" readonly></p><br>
+            <p>Name: <input type="text" style="border:none" size = "30" name = "name" id = "name" value = "'.$name.'" readonly></p><br>
+            <p>Email: <input type="email" size = "30" name = "email" id = "email" value = "'.$email.'"></p><br>
+            <p>Number: <input type="number" size = "30" name = "phone" id = "phone" value = ""></p><br>
+            <p>Remarks: </p><p><textarea cols = 30 rows = 5 name="remark" id = "remark" required></textarea></p>
+            <p><input type = "submit"></p>
+            </form>
+            </body>
+            </html>';
+ }
+?>

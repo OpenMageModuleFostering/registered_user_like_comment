@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+ <config>
+<modules>
+    <Lister_Like>
+        <version>1.6.0</version>
+    </Lister_Like>
+</modules>
+<global>
+    <helpers>
+        <like>
+            <class>Lister_Like_Helper</class>
+        </like>
+    </helpers>
+    <blocks>
+         <like>
+              <class>Lister_Like_Block</class>
+         </like>
+    </blocks>
+    <models>
+        <like>
+            <class>Lister_Like_Model</class>
+            <resourceModel>like_resource</resourceModel>
+        </like>
+        <like_resource>
+            <class>Lister_Like_Model_Resource</class>
+            <entities>
+                <like>
+                    <table>likes</table>
+                </like>
+            </entities>
+        </like_resource>
+    </models>
+    <resources>
+        <like_setup>
+            <setup>
+                <module>Lister_Like</module>
+            </setup>
+        </like_setup>
+    </resources>
+</global>
+<frontend>
+    
+    <routers>
+        <like>
+            <use>standard</use>
+            <args>
+                <module>Lister_Like</module>
+                <frontName>like</frontName>
+            </args>
+        </like>
+    </routers>
+    
+    <layout>
+    <updates>
+        <like>
+            <file>like/like.xml</file>
+        </like>
+    </updates>
+    </layout>
+</frontend>
+ </config>
