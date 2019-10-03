@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Registered_User_Like_Comment",
+    "name": "OpenMageModuleFostering\/Registered_User_Like_Comment",
     "type": "magento-module",
     "license": "Open-Software-License-(OSL)",
     "homepage": "",
     "description": "Like and Comment about products by registered users of the store.",
     "authors": [
-    {
-        "name": "Anush",
-        "email": "anushshiva@gmail.com"
-    }
-],
+        {
+            "name": "Anush",
+            "email": "anushshiva@gmail.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
