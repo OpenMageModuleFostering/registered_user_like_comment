@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Registered_User_Like_Comment",
+    "name": "openmage-module-fostering\/registered_user_like_comment",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Like and Comment about products by registered users of the store.",
     "authors": [
